@@ -13,4 +13,9 @@ data = {'string': 'example string',
 
 # Write JSON file
 with io.open('data.json', 'w') as outfile:
-    outfile.write(json.dumps(data))
+    outfile.write(json.dumps(data,
+                             sort_keys=True,
+                             ensure_ascii=False,
+                             indent=4
+                             )
+                  )
