@@ -19,3 +19,13 @@ with io.open('data.json', 'w') as outfile:
                              indent=4
                              )
                   )
+
+# Read JSON file
+with open('data.json') as data_file:
+    data_loaded = json.load(data_file)
+
+
+print(data == data_loaded)
+print (data_loaded)
+list = data_loaded['list']
+print (list)
